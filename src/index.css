@@ -1,13 +1,36 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Scrollbar Styles */
+body::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height for horizontal scrollbar */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #4caf99, #b000ae); /* Gradient color for the scrollbar */
+  border-radius: 6px; /* Rounded corners for the thumb */
+  border: 3px solid transparent; /* Creates spacing between thumb and track */
+  background-clip: padding-box; /* Ensures gradient is inside the border */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #6c0063, #2e7d64); /* Darker gradient on hover */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f5f5f5; /* Light background for the track */
+  border-radius: 6px; /* Match thumb's roundness */
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #e0e0e0; /* Slightly darker track on hover */
 }

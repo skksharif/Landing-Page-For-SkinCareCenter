@@ -1,0 +1,131 @@
+/* General Footer Container */
+.footer {
+  background-color: #f9fafc;
+  color: #555;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  border-top: 3px solid #00aca9;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Logo Section */
+.footer-logo img {
+  width: 300px;
+}
+
+/* Section Titles */
+.footer-timings h3,
+.footer-contact h3 {
+  font-size: 1.4rem;
+  color: #00aca9;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #00aca9;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Timing & Contact Content */
+.footer-timings p,
+.footer-contact p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.closed {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: #555;
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+  color: #9f00ad;
+  transform: scale(1.1);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.footer-bottom p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Divider for Visual Separation */
+.footer-bottom hr {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .footer-timings,
+  .footer-contact {
+    margin-top: 20px;
+  }
+
+  .footer-logo h2 {
+    font-size: 1.8rem;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-timings h3,
+  .footer-contact h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-timings p,
+  .footer-contact p {
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+    margin: 0 5px;
+  }
+}
