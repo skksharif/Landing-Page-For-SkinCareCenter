@@ -9,7 +9,7 @@ const Content2 = () => {
         <div className="card-content">
           <div className="video-container">
             <video className="responsive-video" controls>
-              <source src="your-video-file.mp4" type="video/mp4" />
+              <source src="./images/intro.mp4" type="video/mp4" />
               {/* Add more <source> tags if you have multiple formats like .webm, .ogg */}
               Your browser does not support the video tag.
             </video>

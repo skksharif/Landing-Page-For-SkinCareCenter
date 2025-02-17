@@ -33,8 +33,9 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>Contact Us</h3>
           <p>Dr. Suja Skin Care Centre</p>
-          <p>CSI DYVA KRUPA Complex, Opposite to federal bank,</p>
-          <p>Prakasam Road, Suryaraopeta, Vijayawada-520002</p>
+          <p>Juvallapalem road, Penmetsa vari street,Opposite Jai Srinivasa Hospital </p>
+          <p>Near Sarvani Diagnostics,Bhimavaram, Andhra Pradesh 534202
+          </p>
         </div>
       </div>
       <div className="footer-bottom">
