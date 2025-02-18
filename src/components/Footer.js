@@ -13,17 +13,34 @@ const Footer = () => {
         {/* Timings */}
         <div className="footer-timings">
           <h3>Timings</h3>
-          <p>Monday - Saturday</p>
-          <p><strong>( 9:30 AM – 6:00 PM )</strong></p>
-          <p>Sunday - <span className="closed">Closed</span></p>
+          <p>Everyday</p>
+          <p>
+            <strong>( 9:30 AM – 6:00 PM )</strong>
+          </p>
+
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
               <i className="fa fa-facebook"></i>
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
               <i className="fa fa-whatsapp"></i>
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+            >
               <i className="fa fa-instagram"></i>
             </a>
           </div>
@@ -33,9 +50,8 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>Contact Us</h3>
           <p>Dr. Suja Skin Care Centre</p>
-          <p>Juvallapalem road, Penmetsa vari street,Opposite Jai Srinivasa Hospital </p>
-          <p>Near Sarvani Diagnostics,Bhimavaram, Andhra Pradesh 534202
-          </p>
+          <p>JP road, opposite Hotlines Bakery,</p>
+          <p>Bhimavaram -534202</p>
         </div>
       </div>
       <div className="footer-bottom">

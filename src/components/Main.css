@@ -19,6 +19,7 @@
 .main-image {
   width: 55%;
   height: auto;
+  filter: drop-shadow(10px 20px 30px #949494);
   border-radius: 10px;
 }
 

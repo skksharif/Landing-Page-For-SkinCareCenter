@@ -58,11 +58,8 @@ export default function Header() {
               </a>
               <div className="dropdown-content">
                 <NavLink href="/skin-services" onClick={closeMenu}>
-                  Skin
+                  Skin & Hair
                 </NavLink>
-                <a href="/" onClick={closeMenu}>
-                  Hair
-                </a>
               </div>
             </div>
             <NavLink to="/about" className="show-navitems" onClick={closeMenu}>
@@ -105,11 +102,9 @@ export default function Header() {
               </a>
               <div className="dropdown-content">
                 <NavLink to="/skin-services" onClick={closeMenu}>
-                  Skin
+                  Skin & Hair
                 </NavLink>
-                <NavLink to="/hair-services" onClick={closeMenu}>
-                  Hair
-                </NavLink>
+
               </div>
             </div>
             <NavLink to="/about" className="show-navitems" onClick={closeMenu}>

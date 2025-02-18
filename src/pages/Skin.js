@@ -1,56 +1,64 @@
 import React from "react";
 import "./Services.css";
 
-const skinCareData = [
-  {
-    title: "Face Pigmentation",
-    description:
-      "Face pigmentation includes dark spots, melasma, and uneven skin tone. Our treatments, including laser therapy and chemical peels, help reduce hyperpigmentation and restore a youthful complexion.",
-  },
-  {
-    title: "Pimples & Acne Removal",
-    description:
-      "We offer specialized acne treatments, including salicylic acid peels, laser therapy, and medical facials, to clear active acne and prevent future breakouts while minimizing scarring.",
-  },
-  {
-    title: "Dark Circles Treatment",
-    description:
-      "Dark circles under the eyes can result from stress, lack of sleep, or genetics. Our solutions include under-eye fillers, laser resurfacing, and vitamin-infused serums to refresh and brighten the eyes.",
-  },
-  {
-    title: "Skin Brightening",
-    description:
-      "Our skin brightening treatments use vitamin C serums, glutathione therapy, and mild chemical peels to enhance your skin's natural glow and even out skin tone.",
-  },
-  {
-    title: "Wrinkle Reduction",
-    description:
-      "Reduce the appearance of fine lines and wrinkles with our anti-aging treatments, including Botox, dermal fillers, and collagen-boosting procedures for firmer, youthful skin.",
-  },
-  {
-    title: "Laser Skin Resurfacing",
-    description:
-      "This advanced treatment uses laser technology to remove damaged skin layers, reduce scars, and stimulate collagen production for smoother and healthier skin.",
-  },
+const mainServices = [
+  { title: "Carbon Laser", description: "Advanced laser treatment that removes pigmentation, tightens skin, and enhances complexion." },
+  { title: "Hydrafacial", description: "A multi-step facial treatment that cleanses, exfoliates, and hydrates for glowing skin." },
+  { title: "Photofacial", description: "Uses intense pulsed light (IPL) to reduce blemishes, redness, and pigmentation." },
+  { title: "Botox", description: "Non-surgical treatment that reduces wrinkles and fine lines for a youthful look." },
+  { title: "Fillers", description: "Dermal fillers restore lost volume, smooth wrinkles, and enhance facial contours." },
+  { title: "Pigmentation", description: "Effective treatments to reduce dark spots, melasma, and uneven skin tone." },
+  { title: "GFC for Hairfall", description: "Growth Factor Concentrate therapy strengthens hair follicles and promotes regrowth." },
+  { title: "Acne", description: "Customized acne treatments to control breakouts, reduce scars, and restore clear skin." },
+  { title: "Open Pores", description: "Advanced treatments to minimize pores and improve skin texture." },
+  { title: "Oily Skin", description: "Oil-control therapies to balance sebum production and prevent breakouts." },
+  { title: "Skin Brightening", description: "Treatments designed to enhance skin radiance and even out complexion." },
+  { title: "Warts Removal", description: "Safe and effective removal of warts using medical procedures." },
+  { title: "Face Tan", description: "De-tanning solutions to restore natural skin tone and remove sun damage." },
+  { title: "Unwanted Hair Laser", description: "Laser hair removal for smooth, hair-free skin with long-lasting results." },
+  { title: "Tattoo Removal", description: "Advanced laser technology to fade and remove unwanted tattoos." },
+];
+
+const additionalServices = [
+  { title: "Psoriasis", description: "Specialized treatments to manage and reduce symptoms of psoriasis." },
+  { title: "Eczema", description: "Soothing therapies to relieve itchiness, redness, and inflammation." },
+  { title: "Dandruff", description: "Effective scalp treatments to eliminate dandruff and promote healthy hair." },
+  { title: "Alopecia", description: "Advanced solutions to treat hair loss and promote regrowth." },
+  { title: "Ringworm Infection", description: "Medical treatments to cure fungal infections on the skin and scalp." },
+  { title: "Vitiligo", description: "Skin pigmentation therapies to manage and treat vitiligo patches." },
+  { title: "Head Lice", description: "Professional treatments to eliminate lice and prevent reinfestation." },
+  { title: "Skin Allergy", description: "Personalized treatments for different types of skin allergies and sensitivities." },
+  { title: "Urticaria", description: "Targeted therapies to manage hives, itching, and allergic reactions." },
 ];
 
 const SkinCareServices = () => {
   return (
     <div className="service-page">
-      <h1 className="page-title">Skin Care Services</h1>
-      <p className="page-intro">
-        Our expert dermatologists provide advanced skin care solutions tailored
-        to your needs. Whether you're dealing with pigmentation, acne, or
-        wrinkles, we have effective treatments for you.
-      </p>
+      <h1 className="page-title">Our Services</h1>
       <div className="services-list">
-        {skinCareData.map((service, index) => (
+        {mainServices.map((service, index) => (
           <div key={index} className="service-card">
             <h2>{service.title}</h2>
             <p>{service.description}</p>
           </div>
         ))}
       </div>
+
+      {additionalServices.length > 0 && (
+        <>
+          <br/>
+          <h2 className="additional-title">Additional Treatments</h2>
+          <br/>
+          <div className="services-list">
+            {additionalServices.map((service, index) => (
+              <div key={index} className="service-card">
+                <h2>{service.title}</h2>
+                <p>{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };
