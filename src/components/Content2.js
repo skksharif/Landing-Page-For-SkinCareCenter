@@ -20,7 +20,7 @@ const Content2 = () => {
               treatments while providing the highest level of patient care.
             </p>
             <p className="timing">
-              Everyday ( 9:30 AM – 6:00 PM )<br />
+            Monday - Sunday ( 9:30 AM – 6:00 PM )<br />
            
             </p>
           </div>

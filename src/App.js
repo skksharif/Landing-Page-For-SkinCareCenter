@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes,Route } from "react-router-dom";
+import { Routes,Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 function App() {
+
   return (
     <div className="App">
       <Header />

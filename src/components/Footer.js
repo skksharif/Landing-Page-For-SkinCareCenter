@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Timings */}
         <div className="footer-timings">
           <h3>Timings</h3>
-          <p>Everyday</p>
+          <p>Monday - Sunday</p>
           <p>
             <strong>( 9:30 AM – 6:00 PM )</strong>
           </p>
