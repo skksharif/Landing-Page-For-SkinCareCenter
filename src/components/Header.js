@@ -52,21 +52,100 @@ export default function Header() {
             </NavLink>
 
             <div className="dropdown show-navitems">
-              <a href="#" className="show-navitems">
-                Our Services
-                <span id="arrow">&#9660;</span>
-              </a>
-              <div className="dropdown-content">
-                <NavLink href="/skin-services" onClick={closeMenu}>
-                  Skin & Hair
-                </NavLink>
-              </div>
+            <a href="#" className="show-navitems">
+              Cosmetic Dermotalogy
+              <span id="arrow">&#9660;</span>
+            </a>
+            <div className="dropdown-content">
+              <NavLink to="/prp" onClick={closeMenu}>
+                PRP (Platelet-Rich Plasma)
+              </NavLink>
+              <NavLink to="/mesotherapy" onClick={closeMenu}>
+                Mesotherapy
+              </NavLink>
+              <NavLink to="/exosomes-therapy" onClick={closeMenu}>
+                Exosomes Therapy
+              </NavLink>
+              <NavLink to="/hair-threads" onClick={closeMenu}>
+                Hair Threads
+              </NavLink>
+              <NavLink to="/stem-cell-therapy" onClick={closeMenu}>
+                Stem Cell Therapy
+              </NavLink>
+              <NavLink to="/face-botox" onClick={closeMenu}>
+                Face Botox
+              </NavLink>
+              <NavLink to="/water-filler" onClick={closeMenu}>
+                Water Filler
+              </NavLink>
+              <NavLink to="/dark-circles-treatment" onClick={closeMenu}>
+                Dark Circles Treatment
+              </NavLink>
+              <NavLink to="/acne-scar-treatment" onClick={closeMenu}>
+                Acne Scar Treatment
+              </NavLink>
+              <NavLink to="/skin-brightening" onClick={closeMenu}>
+                Skin Brightening
+              </NavLink>
+              <NavLink to="/chemical-peels" onClick={closeMenu}>
+                Chemical Peels
+              </NavLink>
+              <NavLink to="/laser-treatments" onClick={closeMenu}>
+                Laser Treatments
+              </NavLink>
+              <NavLink to="/anti-aging" onClick={closeMenu}>
+                Anti-Aging Procedures
+              </NavLink>
+              <NavLink to="/skin-rejuvenation" onClick={closeMenu}>
+                Skin Rejuvenation
+              </NavLink>
+              <NavLink to="/micro-needling" onClick={closeMenu}>
+                Micro-needling
+              </NavLink>
+              <NavLink to="/phototherapy" onClick={closeMenu}>
+                Phototherapy
+              </NavLink>
+              <NavLink to="/pigmentation-treatment" onClick={closeMenu}>
+                Pigmentation Treatment
+              </NavLink>
+              <NavLink to="/wrinkle-reduction" onClick={closeMenu}>
+                Wrinkle Reduction
+              </NavLink>
+              <NavLink to="/hydrafacial" onClick={closeMenu}>
+                Hydrafacial
+              </NavLink>
+              <NavLink to="/scar-revision" onClick={closeMenu}>
+                Scar Revision
+              </NavLink>
+              <NavLink to="/lip-enhancement" onClick={closeMenu}>
+                Lip Enhancement
+              </NavLink>
+              <NavLink to="/skin-tightening" onClick={closeMenu}>
+                Skin Tightening
+              </NavLink>
+              <NavLink to="/dermal-fillers" onClick={closeMenu}>
+                Dermal Fillers
+              </NavLink>
+              <NavLink to="/tattoo-removal" onClick={closeMenu}>
+                Tattoo Removal
+              </NavLink>
+              <NavLink to="/stretch-mark-treatment" onClick={closeMenu}>
+                Stretch Mark Treatment
+              </NavLink>
+              <NavLink to="/skin-tag-wart-removal" onClick={closeMenu}>
+                Skin Tag & Wart Removal
+              </NavLink>
             </div>
+          </div>
             <NavLink to="/about" className="show-navitems" onClick={closeMenu}>
               About
             </NavLink>
-        
-            <NavLink to="/contact" className="show-navitems" onClick={closeMenu}>
+
+            <NavLink
+              to="/contact"
+              className="show-navitems"
+              onClick={closeMenu}
+            >
               Contact Us
             </NavLink>
           </nav>
@@ -90,30 +169,103 @@ export default function Header() {
           </div>
         </a>
         <nav className={menuOpen ? "show" : ""}>
-      
-        <NavLink to="/" className="show-navitems" onClick={closeMenu}>
-              Home
-            </NavLink>
-      
-            <div className="dropdown show-navitems">
-              <a href="#" className="show-navitems">
-                Our Services
-                <span id="arrow">&#9660;</span>
-              </a>
-              <div className="dropdown-content">
-                <NavLink to="/skin-services" onClick={closeMenu}>
-                  Skin & Hair
-                </NavLink>
+          <NavLink to="/" className="show-navitems" onClick={closeMenu}>
+            Home
+          </NavLink>
 
-              </div>
+          <div className="dropdown show-navitems">
+            <a href="#" className="show-navitems">
+              Cosmetic Dermotalogy
+              <span id="arrow">&#9660;</span>
+            </a>
+            <div className="dropdown-content">
+              <NavLink to="/prp" onClick={closeMenu}>
+                PRP (Platelet-Rich Plasma)
+              </NavLink>
+              <NavLink to="/mesotherapy" onClick={closeMenu}>
+                Mesotherapy
+              </NavLink>
+              <NavLink to="/exosomes-therapy" onClick={closeMenu}>
+                Exosomes Therapy
+              </NavLink>
+              <NavLink to="/hair-threads" onClick={closeMenu}>
+                Hair Threads
+              </NavLink>
+              <NavLink to="/stem-cell-therapy" onClick={closeMenu}>
+                Stem Cell Therapy
+              </NavLink>
+              <NavLink to="/face-botox" onClick={closeMenu}>
+                Face Botox
+              </NavLink>
+              <NavLink to="/water-filler" onClick={closeMenu}>
+                Water Filler
+              </NavLink>
+              <NavLink to="/dark-circles-treatment" onClick={closeMenu}>
+                Dark Circles Treatment
+              </NavLink>
+              <NavLink to="/acne-scar-treatment" onClick={closeMenu}>
+                Acne Scar Treatment
+              </NavLink>
+              <NavLink to="/skin-brightening" onClick={closeMenu}>
+                Skin Brightening
+              </NavLink>
+              <NavLink to="/chemical-peels" onClick={closeMenu}>
+                Chemical Peels
+              </NavLink>
+              <NavLink to="/laser-treatments" onClick={closeMenu}>
+                Laser Treatments
+              </NavLink>
+              <NavLink to="/anti-aging" onClick={closeMenu}>
+                Anti-Aging Procedures
+              </NavLink>
+              <NavLink to="/skin-rejuvenation" onClick={closeMenu}>
+                Skin Rejuvenation
+              </NavLink>
+              <NavLink to="/micro-needling" onClick={closeMenu}>
+                Micro-needling
+              </NavLink>
+              <NavLink to="/phototherapy" onClick={closeMenu}>
+                Phototherapy
+              </NavLink>
+              <NavLink to="/pigmentation-treatment" onClick={closeMenu}>
+                Pigmentation Treatment
+              </NavLink>
+              <NavLink to="/wrinkle-reduction" onClick={closeMenu}>
+                Wrinkle Reduction
+              </NavLink>
+              <NavLink to="/hydrafacial" onClick={closeMenu}>
+                Hydrafacial
+              </NavLink>
+              <NavLink to="/scar-revision" onClick={closeMenu}>
+                Scar Revision
+              </NavLink>
+              <NavLink to="/lip-enhancement" onClick={closeMenu}>
+                Lip Enhancement
+              </NavLink>
+              <NavLink to="/skin-tightening" onClick={closeMenu}>
+                Skin Tightening
+              </NavLink>
+              <NavLink to="/dermal-fillers" onClick={closeMenu}>
+                Dermal Fillers
+              </NavLink>
+              <NavLink to="/tattoo-removal" onClick={closeMenu}>
+                Tattoo Removal
+              </NavLink>
+              <NavLink to="/stretch-mark-treatment" onClick={closeMenu}>
+                Stretch Mark Treatment
+              </NavLink>
+              <NavLink to="/skin-tag-wart-removal" onClick={closeMenu}>
+                Skin Tag & Wart Removal
+              </NavLink>
             </div>
-            <NavLink to="/about" className="show-navitems" onClick={closeMenu}>
-              About
-            </NavLink>
-        
-            <NavLink to="/contact" className="show-navitems" onClick={closeMenu}>
-              Contact Us
-            </NavLink>
+          </div>
+          <NavLink to="/about" className="show-navitems" onClick={closeMenu}>
+            About
+          </NavLink>
+
+          <NavLink to="/contact" className="show-navitems" onClick={closeMenu}>
+            Contact Us
+          </NavLink>
         </nav>
       </div>
     </>
