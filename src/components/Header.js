@@ -193,7 +193,7 @@ export default function Header() {
           <div className="responsive">
             <a to="/" onClick={closeMenu}>
               <div className="logo-mobile">
-                <img src="/images/logo.png" alt="Skin Care Logo" />
+                <NavLink to="/"><img src="/images/logo.png" alt="Skin Care Logo" /></NavLink>
               </div>
             </a>
             <div
@@ -255,7 +255,7 @@ export default function Header() {
         </div>
         <a to="/" onClick={closeMenu}>
           <div className="logo">
-            <img src="/images/logo.png" alt="Skin Care Logo" />
+          <NavLink to="/"><img src="/images/logo.png" alt="Skin Care Logo" /></NavLink>
             <div className="logo-text"></div>
           </div>
         </a>
