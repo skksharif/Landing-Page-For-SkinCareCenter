@@ -311,6 +311,25 @@ export default function Header() {
 
             <div className="dropdown show-navitems">
               <a href="#" className="show-navitems">
+                Medical Dermotalogy
+                <span id="arrow">&#9660;</span>
+              </a>
+              <div className="dropdown-content">
+              {medicalTreatments.map((item) => (
+                <NavLink
+                  key={item.path}
+                  to={`/cosmetic-dermotology/${item.path}`}
+                  state={{ details: item.details, image: item.image }}
+                  onClick={closeMenu}
+                >
+                  {item.name}
+                </NavLink>
+              ))}
+            </div>
+            </div>
+
+            <div className="dropdown show-navitems">
+              <a href="#" className="show-navitems">
                 Cosmetic Dermotalogy
                 <span id="arrow">&#9660;</span>
               </a>
@@ -342,6 +361,7 @@ export default function Header() {
           </nav>
         </div>
       </header>
+
       <div className="navbar" id="mynav">
         <div className="responsive">
           <div
