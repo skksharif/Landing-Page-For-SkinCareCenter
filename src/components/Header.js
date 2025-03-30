@@ -173,6 +173,105 @@ export default function Header() {
       image: "/images/skin-tag-wart.jpg" 
     }
   ];
+  const medicalTreatments = [
+    { 
+      name: "ACNE (Pimples)", 
+      path: "acne",
+      details: "Acne is a common skin condition that occurs when hair follicles become clogged with oil and dead skin cells, leading to pimples, blackheads, and cysts. It can affect anyone but is most prevalent in teenagers and young adults.",
+      image: "/images/md/acne.jpeg"
+    },
+    {
+      name: "ECZEMA (Allergic Dermatitis)",
+      path: "eczema",
+      details: "Eczema is a chronic inflammatory skin condition characterized by dry, itchy, and inflamed skin. It can be triggered by allergens, irritants, or stress and often requires ongoing management.",
+      image: "/images/md/eczemas.jpeg"
+    },
+    {
+      name: "ROSACEA",
+      path: "rosacea",
+      details: "Rosacea is a chronic skin condition that causes redness, visible blood vessels, and sometimes acne-like bumps on the face. It can be triggered by various factors, including sun exposure, hot beverages, and spicy foods.",
+      image: "/images/md/rosacea.jpeg"
+    },
+    {
+      name: "PSORIASIS",
+      path: "psoriasis",
+      details: "Psoriasis is an autoimmune condition that leads to the rapid growth of skin cells, resulting in thick, red patches covered with silvery scales. It can affect any part of the body and may be associated with joint pain.",
+      image: "/images/md/psoriasis.jpeg"
+    },
+    {
+      name: "VITILIGO",
+      path: "vitiligo",
+      details: "Vitiligo is a skin disorder characterized by the loss of pigment, leading to white patches on the skin. It occurs when melanocytes (pigment-producing cells) are destroyed, and its exact cause is not fully understood.",
+      image: "/images/md/vitiligo.jpeg"
+    },
+    {
+      name: "FUNGAL INFECTIONS",
+      path: "fungal-infections",
+      details: "Fungal infections are caused by fungi that invade the skin, hair, or nails. Common types include athlete's foot, ringworm, and candidiasis. They can cause itching, redness, and discomfort.",
+      image: "/images/md/fungal-infection.jpeg"
+    },
+    {
+      name: "SCABIES",
+      path: "scabies",
+      details: "Scabies is a contagious skin condition caused by tiny mites that burrow into the skin, leading to intense itching and a rash. It spreads through close contact and requires treatment to eliminate the mites.",
+      image: "/images/md/scabies.jpeg"
+    },
+    {
+      name: "LICHEN PLANUS",
+      path: "lichen-planus",
+      details: "Lichen planus is an inflammatory skin condition that causes itchy, flat-topped, purple lesions on the skin and mucous membranes. Its cause is unknown, but it may be related to immune system dysfunction.",
+      image: "/images/md/lichen-planus.jpeg"
+    },
+    {
+      name: "WARTS",
+      path: "warts",
+      details: "Warts are benign growths caused by the human papillomavirus (HPV). They can appear anywhere on the body and are often rough and raised. Treatment options include freezing, laser therapy, and topical medications.",
+      image: "/images/md/warts.jpeg"
+    },
+    {
+      name: "MELASMA",
+      path: "melasma",
+      details: "Melasma is a skin condition characterized by brown or gray-brown patches, usually on the face. It is often triggered by hormonal changes, sun exposure, and certain medications.",
+      image: "/images/md/melasma.jpeg"
+    },
+    {
+      name: "ALOPECIA",
+      path: "alopecia",
+      details: "Alopecia is an autoimmune condition that causes hair loss in patches. It can affect the scalp and other areas of the body. The exact cause is unknown, but it may be related to genetic and environmental factors.",
+      image: "/images/md/alopecia.jpeg"
+    },
+    {
+      name: "MALE PATTERN HAIR LOSS",
+      path: "male-pattern-hair-loss",
+      details: "Male pattern hair loss is a common condition characterized by gradual thinning of hair, usually starting from the temples and crown. It is primarily caused by genetics and hormonal changes.",
+      image: "/images/md/male-pattern-hair-loss.jpeg"
+    },
+    {
+      name: "DANDRUFF",
+      path: "dandruff",
+      details: "Dandruff is a scalp condition that causes flaking of the skin, often accompanied by itching. It can be caused by dry skin, fungal infections, or sensitivity to hair products.",
+      image: "/images/md/dandruff.jpeg"
+    },
+    {
+      name: "EXCESS HAIR",
+      path: "excess-hair",
+      details: "Excess hair growth (hirsutism) occurs when hair grows in areas where it is typically minimal or absent. It can be due to hormonal imbalances, genetics, or medical conditions such as PCOS.",
+      image: "/images/md/excess-hair.jpeg"
+    },
+    {
+      name: "PEDIATRIC DERMATOLOGY",
+      path: "pediatric-dermatology",
+      details: "Pediatric dermatology focuses on diagnosing and treating skin conditions in children, including eczema, birthmarks, infections, and genetic disorders affecting the skin.",
+      image: "/images/md/pediatric-dermatology.jpeg"
+    },
+    {
+      name: "DERMATOSURGERY",
+      path: "dermatosurgery",
+      details: "Dermatosurgery involves surgical procedures to treat skin conditions such as cysts, tumors, scars, and skin cancer. Techniques include excision, laser surgery, and cryotherapy.",
+      image: "/images/md/dermatosurgery.jpeg"
+    }
+];
+
   
 
   return (
@@ -228,6 +327,7 @@ export default function Header() {
               ))}
             </div>
             </div>
+
             <NavLink to="/about" className="show-navitems" onClick={closeMenu}>
               About
             </NavLink>
@@ -266,6 +366,25 @@ export default function Header() {
 
           <div className="dropdown show-navitems">
             <a href="#" className="show-navitems">
+              Medical Dermotalogy
+              <span id="arrow">&#9660;</span>
+            </a>
+            <div className="dropdown-content">
+              {medicalTreatments.map((item) => (
+                <NavLink
+                  key={item.path}
+                  to={`/medical-dermotology/${item.path}`}
+                  state={{ details: item.details, image: item.image }}
+                  onClick={closeMenu}
+                >
+                  {item.name}
+                </NavLink>
+              ))}
+            </div>
+          </div>
+
+          <div className="dropdown show-navitems">
+            <a href="#" className="show-navitems">
               Cosmetic Dermotalogy
               <span id="arrow">&#9660;</span>
             </a>
@@ -282,6 +401,7 @@ export default function Header() {
               ))}
             </div>
           </div>
+
           <NavLink to="/about" className="show-navitems" onClick={closeMenu}>
             About
           </NavLink>

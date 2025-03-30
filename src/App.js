@@ -17,7 +17,10 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/skin-services" element={<Skin />} />
-        <Route path="/cosmetic-dermotology" element={<Disease />}>
+        <Route path="/medical-dermotology">
+            <Route path=":treatmentName" element={<Disease/>}/>
+        </Route>
+        <Route path="/cosmetic-dermotology" >
             <Route path=":treatmentName" element={<Disease/>}/>
         </Route>
         <Route exact path="/about" element={<About />} />
