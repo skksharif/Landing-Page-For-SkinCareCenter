@@ -7,15 +7,17 @@ const Footer = () => {
       <div className="footer-container">
         {/* Logo and Name */}
         <div className="footer-logo">
-          <img src="./images/logo.png" alt="" />
+          <img src="./images/logo.png" alt="Dr. Suja Skin Care Centre" />
         </div>
 
         {/* Timings */}
         <div className="footer-timings">
           <h3>Timings</h3>
-          <p>Monday - Sunday</p>
           <p>
-            <strong>( 9:30 AM – 6:00 PM )</strong>
+            <strong>Mon - Fri:</strong> 9:00 AM – 2:00 PM, 5:00 PM – 8:00 PM
+          </p>
+          <p>
+            <strong>Sunday:</strong> 10:00 AM – 1:00 PM
           </p>
 
           <div className="social-icons">
@@ -28,7 +30,7 @@ const Footer = () => {
               <i className="fa fa-facebook"></i>
             </a>
             <a
-              href="https://twitter.com"
+              href="https://whatsapp.com"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -50,8 +52,8 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>Contact Us</h3>
           <p>Dr. Suja Skin Care Centre</p>
-          <p>JP road, opposite Hotlines Bakery,</p>
-          <p>Bhimavaram -534202</p>
+          <p>JP Road, Opposite Hotlines Bakery,</p>
+          <p>Bhimavaram - 534202</p>
         </div>
       </div>
       <div className="footer-bottom">

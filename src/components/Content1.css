@@ -22,7 +22,7 @@
 }
 
 .about-content p {
-  font-size: 18px;
+  font-size: 14px !important;
   color: #555;
   line-height: 1.8;
   margin-bottom: 20px;
@@ -55,14 +55,18 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.about-banner{
-  background-color: #c31999;
+.about-banner {
+  background: linear-gradient(45deg, #c31999, #e03846); /* Trendy gradient */
   text-align: center;
-  padding: 20px 0;
-  font-size: 20px;
-  font-weight: bolder;
-  color: white;
+  padding: 25px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 10px 20px rgba(195, 25, 153, 0.3);
 }
+
 /* Media Query for Tablets */
 @media (max-width: 768px) {
   .about-section {
@@ -79,7 +83,7 @@
   }
 
   .about-content p {
-    font-size: 16px; /* Reduce paragraph size for better readability */
+    font-size: 14px; /* Reduce paragraph size for better readability */
   }
 
   .profile-image {
@@ -98,7 +102,7 @@
   }
 
   .about-content p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.6; /* Adjust line height for compactness */
   }
 

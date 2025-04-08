@@ -282,9 +282,13 @@ export default function Header() {
             <i className="fa fa-envelope"></i>
             <span>dr.suja@gmail.com</span>
           </a>
-          <a href="tel:+919848022425">
+          <a href="tel:+919491080222">
             <i className="fa fa-phone"></i>
-            <span>+91 98480 22425</span>
+            <span>+91 9491080222</span>
+          </a>
+          <a href="tel:08816-226699">
+            <i className="fa fa-phone"></i>
+            <span>08816-226699</span>
           </a>
         </div>
 
