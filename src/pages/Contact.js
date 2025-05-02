@@ -1,6 +1,6 @@
-import React,{useEffect} from "react";
-import AOS from 'aos'
-import "aos/dist/aos.css"
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Contact.css";
 import {
   FaPhoneAlt,
@@ -32,7 +32,7 @@ const Contact = () => {
           </div>
           <div className="contact-item" data-aos="fade-up">
             <FaEnvelope className="contact-icon" />
-            <a href="mailto:info@drsuja.com">info@drsuja.com</a>
+            <a href="mailto:info@drsuja.com">drsujaskinhospital@gmail.com</a>
           </div>
           <div className="contact-item" data-aos="fade-up">
             <FaMapMarkerAlt className="contact-icon" />
@@ -42,10 +42,11 @@ const Contact = () => {
 
         <div className="contact-map" data-aos="fade-up">
           <iframe
-            title="clinic-location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.6419923695153!2d81.5128044751461!3d16.544161984206337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37d3a75088b621%3A0x48d17492c4909671!2sDr.Suja%20Skin%20Hospital%20%7C%20Best%20Skin%20Clinic%20in%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1739758866639!5m2!1sen!2sinF"
-            allowFullScreen
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3824.6403128492193!2d81.5127906751461!3d16.544246684206215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDMyJzM5LjMiTiA4McKwMzAnNTUuMyJF!5e0!3m2!1sen!2sin!4v1746165610230!5m2!1sen!2sin"
+           
+            allowfullscreen=""
             loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>

@@ -52,12 +52,12 @@ export default function Header() {
       details: "Botox injections relax facial muscles to reduce the appearance of fine lines and wrinkles, giving a smoother and youthful look.", 
       image: "/images/face-botox.jpg" 
     },
-    { 
-      name: "Water Filler", 
-      path: "water-filler", 
-      details: "Water-based dermal fillers provide deep hydration and plump up the skin, reducing signs of aging while maintaining a natural look.", 
-      image: "/images/water-filler.jpg" 
-    },
+    {
+      name: "Skin Booster",
+      path: "skin-booster",
+      details: "Skin Boosters are advanced injectable treatments designed to deeply hydrate and rejuvenate the skin from within. Unlike traditional dermal fillers, they improve skin texture, elasticity, and overall radiance by delivering hyaluronic acid directly into the skin. Ideal for treating dull, tired-looking skin, fine lines, and uneven texture, skin boosters help you achieve a naturally glowing and refreshed look. Common treatment areas include the face, neck, décolletage, and hands.",
+      image: "/images/skin-booster.jpg"
+    },    
     { 
       name: "Dark Circles Treatment", 
       path: "dark-circles-treatment", 

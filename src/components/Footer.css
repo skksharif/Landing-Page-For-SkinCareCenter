@@ -149,16 +149,18 @@
 @media (max-width: 480px) {
   .footer {
     padding: 30px 15px 15px;
+
   }
 
   .footer-timings h3,
   .footer-contact h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    
   }
 
   .footer-timings p,
   .footer-contact p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .social-icon {

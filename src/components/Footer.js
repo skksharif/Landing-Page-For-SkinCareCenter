@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="footer-timings">
           <h3>Timings</h3>
           <p>
-            <strong>Mon - Fri:</strong> 9:00 AM – 2:00 PM, 5:00 PM – 8:00 PM
+            <strong>Mon - Sat:</strong> 9:00 AM – 2:00 PM, 5:00 PM – 8:00 PM
           </p>
           <p>
             <strong>Sunday:</strong> 10:00 AM – 1:00 PM
@@ -51,7 +51,7 @@ const Footer = () => {
         {/* Contact Details */}
         <div className="footer-contact">
           <h3>Contact Us</h3>
-          <p>Dr. Suja Skin Care Centre</p>
+          <p>Dr. Suja Skin Hospital</p>
           <p>JP Road, Opposite Hotlines Bakery,</p>
           <p>Bhimavaram - 534202</p>
         </div>
