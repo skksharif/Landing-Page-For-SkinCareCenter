@@ -12,7 +12,7 @@ export default function Content1() {
       <div className="about-section">
         <div className="about-content">
           <h2 data-aos="fade-up">
-            About Suja's Skin Care <span></span>
+            About Suja's Skin Hospital <span></span>
           </h2>
 
           <p data-aos="fade-up">
@@ -30,11 +30,11 @@ export default function Content1() {
             and Dermatosurgery.
           </p>
           <p data-aos="fade-up">
-            Dr Keerthi ‘s idea of providing the quality and affordable aesthetic
-            services has led to the establishment of Dr suja Skin Hospital and
-            Cosmetology centre in Bhimavaram. We emphasis on prevention and
-            early detection of your skin problems, so that we can identify and
-            treat the main cause as well.
+            Dr Kotla suja Lalitha idea of providing the quality and affordable
+            aesthetic services has led to the establishment of Dr suja Skin
+            Hospital and Cosmetology centre in Bhimavaram. We emphasis on
+            prevention and early detection of your skin problems, so that we can
+            identify and treat the main cause as well.
           </p>
         </div>
         <div className="about-image" data-aos="fade-up">
